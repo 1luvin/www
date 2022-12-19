@@ -1,0 +1,97 @@
+html, body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.valorant {
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+.valorant .video-overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: radial-gradient(#111726, transparent);
+}
+.valorant .text-overlay {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.valorant .text-overlay p {
+  margin: 0;
+}
+.valorant .text-overlay h1 {
+  color: white;
+  font-weight: 700;
+  margin: 0;
+}
+.valorant .text-overlay a {
+  display: inline-block;
+  background-color: #E70D4F;
+  border: none;
+  border-radius: 9999px;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  transition: 0.25s;
+  text-decoration: none;
+}
+.valorant .text-overlay a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: 0 0 20px #E70D4F;
+}
+.valorant .bg {
+  position: relative;
+  display: flex;
+  width: 100vw;
+}
+.valorant .bg img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
+}
+.valorant .bg img.opaque {
+  opacity: 1;
+}
+.valorant .bg-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.valorant .bg-overlay.agent {
+  background: linear-gradient(0.25turn, #111726, rgba(17, 23, 38, 0.7019607843));
+}
+.valorant .bg-overlay.map {
+  background: linear-gradient(0.25turn, #111726, transparent);
+}
+
+.text1 {
+  color: white;
+  font-size: 130px;
+}
+
+.text2 {
+  color: white;
+  font-size: 60px;
+}
+
+.text3 {
+  font-size: 20px;
+  color: #DDDDDD;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <!--    Styles-->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/container.css">
+    <link rel="stylesheet" href="../css/adaptive.css">
+    <!--    Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700">
+    <!--    Icons-->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+          type='text/css'>
+    <script src="../js/main.js" defer></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="valorant">
+    <video id="v-video" width="100%" autoplay="autoplay" loop muted>
+        <source src="../../res/vid/valorant.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <div class="text-overlay">
+        <p class="text3">Tactical shooter with 5 vs 5 matches and unique characters</p>
+        <h1 class="text1">VALORANT</h1>
+        <a id="v-button" href="https://playvalorant.com/en-us/" target="_blank">PLAY NOW</a>
+    </div>
+</div>
+
+<div class="valorant">
+    <div class="bg agent">
+        <img src="../../res/img/agent/bg/jett.jpg" class="opaque"/>
+        <img src="../../res/img/agent/bg/reyna.jpg"/>
+        <img src="../../res/img/agent/bg/raze.jpg">
+    </div>
+    <div class="bg-overlay agent"></div>
+
+    <div class="container">
+        <div class="agent-model">
+            <img src="../../res/img/agent/model/jett.png" class="opaque">
+            <img src="../../res/img/agent/model/reyna.png">
+            <img src="../../res/img/agent/model/raze.png">
+        </div>
+        <div class="info agent">
+            <div class="data">
+                <p class="type text3">Agent</p>
+                <div class="text-data agent opaque">
+                    <h1 class="name text1">JETT</h1>
+                    <p id="super" class="about text3">
+                        Sunwoo Han (Korean: 한선우) hails from South Korea, with possible links to the Insa-dong
+                        neighborhood in Seoul. As a chef in her early life, she was involved in an incident relating
+                        to her wind-like radiant powers at the restaurant she worked at, causing a "freak storm"
+                        that all but destroyed the building. Sunwoo fled the scene soon after. Later on, Sunwoo would be
+                        recruited by the VALORANT Protocol to become its tenth agent, "Jett". Whilst working for the
+                        Protocol however, an incident occurred in Venice that destroyed part of the city.
+                    </p>
+                </div>
+                <div class="text-data agent">
+                    <h1 class="name text1">REYNA</h1>
+                    <p class="about text3">
+                        Zyanya Mondragón is a Radiant from Mexico with the power to absorb life energy from the
+                        souls of people that she kills. After being affected by a disastrous event involving
+                        machines, Mondragón has a strong dislike for technology and humanity, believing herself and
+                        her fellow Radiants to be the true future for Earth. Before her time as a VALORANT Protocol
+                        agent, she set up a sanctuary to help people escape from Kingdom and heal, establishing a
+                        community there and becoming their protector and avenger.
+                    </p>
+                </div>
+                <div class="text-data agent">
+                    <h1 class="name text1">RAZE</h1>
+                    <p class="about text3">
+                        Tayane Alves is an engineer coming from Salvador, Bahia, Brazil, with a strong enthusiasm for
+                        explosives and paint - usually combined. Holding strong objections towards Kingdom Corporation's
+                        operations in Bahia, Alves was involved in driving the company out of her home state and forcing
+                        them to abandon their sites there, the marks of her tools staining the plots as a testament to
+                        her victories. Hired since then to work for the VALORANT Protocol as its twelfth agent, "Raze",
+                        Alves now sows her chaos against bigger threats to Earth.
+                    </p>
+                </div>
+            </div>
+            <div class="buttons agent">
+                <button onclick="changeAgent(false)"><i class="fa fa-angle-left fa-2x"></i></button>
+                <button onclick="changeAgent(true)"><i class="fa fa-angle-right fa-2x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="valorant">
+    <div class="bg map">
+        <img src="../../res/img/map/ascent.jpg" class="opaque"/>
+        <img src="../../res/img/map/breeze.jpg"/>
+        <img src="../../res/img/map/icebox.jpg"/>
+    </div>
+    <div class="bg-overlay map"></div>
+
+    <div class="container">
+        <div class="info map">
+            <div class="data">
+                <p class="text3">Map</p>
+                <div class="text-data map opaque">
+                    <h1 class="name text1">ASCENT</h1>
+                    <p class="about text3">
+                        Ascent is a map set in Italy that features a large, open middle area that both teams can
+                        skirmish over. Mid is a playground for diverse ability use and successfully controlling the area
+                        opens additional routes for Attackers to both Spike sites.
+                    </p>
+                </div>
+                <div class="text-data map">
+                    <h1 class="name text1">BREEZE</h1>
+                    <p class="about text3">
+                        Breeze's 'unique' features are present on the A side of the map, mostly to do with A Hall. There
+                        are ropes to get players into A Hall. On the defending side players can use the rope at the back
+                        of A Site to get onto Bridge and into Hall.
+                    </p>
+                </div>
+                <div class="text-data map">
+                    <h1 class="name text1">ICEBOX</h1>
+                    <p class="about text3">
+                        Icebox is the first map to introduce horizontal ziplines, seen at the A Site. Each Icebox site
+                        is a complex combat space that features plenty of cover and verticality. This map emphasizes
+                        skirmishes, sharp aim, and adaptive play.
+                    </p>
+                </div>
+            </div>
+            <div class="buttons map">
+                <button onclick="changeMap(false)"><i class="fa fa-angle-left fa-2x"></i></button>
+                <button onclick="changeMap(true)"><i class="fa fa-angle-right fa-2x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
